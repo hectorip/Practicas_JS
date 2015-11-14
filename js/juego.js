@@ -43,5 +43,20 @@ function suma_de_longitudes(nombre_1, nombre_2){
 }
 
 
+// [1, 2, 3, 4, 5]
+function suma_array(coleccion){
+// Contenido 
+    var suma = 0;
+
+    for(i=0; i < coleccion.length; i++){
+
+        suma = suma + coleccion[i];
+        console.log("El elemento actual es: " + coleccion[i])
+    }
+
+    return suma;
+}
+
+
 
 
