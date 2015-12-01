@@ -1,4 +1,5 @@
 /*
+
     1. El jugador 1 escoge una palabra.
 
     2. El jugador 1 Dibuja el número de espacios de la palabra.
@@ -14,6 +15,7 @@
     6. Si se han cometido X o más errores el ahorcado se completa y el jugador 2 pierde.
     
     6b. Si se ha completado la palbra el jugador 2 gana.
+
 */
 
 function escogerPalabra(){
