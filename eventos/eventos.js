@@ -35,20 +35,78 @@
     -> doubleclick
     -> keypress     -> Presiona una tecla
 */
+// document.addEventListener(function(){})
+// $(document).ready(function(){})
+
+var click_handler = function(evento){
+        $('#input_container').append("<input type='text'>");
+        //evento.preventDefault();
+        boton_accion = $('#boton_accion');
+        // boton_accion.css('background-color', 'red');
+        boton_accion.css({
+            'font-family': 'serif',
+            'font-size': '20px'
+        })
+        boton_accion.animate( { width: '500px', height: '1000px' }, 2000 );
+        return false;
+    };
+
+var remove_handler =function(){
+        $('input').last().remove();
+        return false;
+    };
+
+
+var click_handler2 = function(){
+    console.log("Segundo Handler corriendo");
+};
+
+// cuando se termine de cargar la página
 
 $(function(){
+    boton_accion = $('#boton_accion');
+    boton_accion.click(click_handler); // callbacks
+    boton_accion.click(click_handler2);
+    $('#boton_ocultar').click(remove_handler);
+
+    // $('#boton_accion') != document.querySelector("#boton_accion")
+    // 
+    // $('form').append(boton_accion.clone());
+
+    //fadeOut(2000)
+    //fadeIn(2000)
+    //fadeToggle(3000)
+
+    //slideOut
+    //slideIn
+    //slideToggle
+
+    //hide
+    //show
+
+    //clone
+    //css({})
+
+    // Para contendores
+    // append
+    // prepend
+
+    // animate
     
-    // console.log("Corriendo");
-    $('#boton_accion').click(function(event){
-        $('#input_container').append("<input type='text'>");
-        event.preventDefault();
-        return false;
-    });
+    // addClass('mi_clase op')
+    // removeClass('mi_clase')
+    // toggleClass('mi_clase')
 
-    $('#boton_ocultar').click(function(event){
-        // $('#input_container').slideToggle();
-        $('#input_container').fadeToggle();
-        return false;
-    });
-
+    // attr('id', 'mi_id')
 });
+
+
+
+
+
+
+
+
+
+
+
