@@ -101,6 +101,20 @@ $(function(){
 });
 
 
+// AJAX
+
+// XMLHttpRequest
+
+
+// Asynchronous Javascript and XML
+
+
+// $.ajax
+
+// $.get
+// $.post
+
+
 
 
 
